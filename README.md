@@ -8,8 +8,6 @@ This project is created for Full Stack Development course assignment.
 
 **Topic:** Responsive Landing Page using HTML & CSS
 
-**Student:** Ajith A Nair
-
 ## About
 
 This is a landing page for a budget airline's flash sale offering 50% off on Asia flights. The page is fully responsive and works on mobile, tablet, and desktop devices.
@@ -41,11 +39,6 @@ This is a landing page for a budget airline's flash sale offering 50% off on Asi
 - CSS3
 - Google Fonts (Playfair Display, Space Grotesk)
 
-## How to View
-
-1. Download the files
-2. Open `index.html` in any web browser
-
 ## Assignment Requirements Completed
 
 - ✓ Semantic HTML5 elements
@@ -57,4 +50,4 @@ This is a landing page for a budget airline's flash sale offering 50% off on Asi
 
 ---
 
-**Date:** January 2026
+**Date:** 28 January 2026
