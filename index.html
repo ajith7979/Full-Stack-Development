@@ -3,239 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlyEasy Flash Sale - 50% Off Asia Flights</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>FlyEasy | 50% Off Asia Flights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!--  HEADER -->
-    <header>
-        <div class="nav-container">
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar">
             <div class="logo">
-                <span class="logo-icon">✈</span>
-                FlyEasy
+                <i class="fas fa-plane"></i>
+                <span>FlyEasy</span>
             </div>
-
+            
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-
-            <nav>
-                <ul>
-                    <li><a href="#deals">Deals</a></li>
-                    <li><a href="#flights">Flights</a></li>
-                    <li><a href="#hotels">Hotels</a></li>
-                    <li><a href="#support">Support</a></li>
-                </ul>
-            </nav>
-        </div>
+            
+            <div class="nav-links">
+                <a href="#deals" class="nav-link">Deals</a>
+                <a href="#flights" class="nav-link">Flights</a>
+                <a href="#hotels" class="nav-link">Hotels</a>
+                <a href="#support" class="nav-link">Support</a>
+                <a href="#booking" class="nav-link book-now">Book Now</a>
+            </div>
+        </nav>
     </header>
 
-    <!--  HERO  -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="parallax-bg">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+        
         <div class="hero-content">
-            <div class="badge-wrapper">
-                <span class="badge">⚡ Limited Time Offer</span>
-                <span class="countdown-badge">Ends in 3 Days</span>
+            <div class="urgency-badge">
+                <span class="badge-text">FLASH SALE</span>
+                <div class="countdown">
+                    <span class="countdown-text">Ends in:</span>
+                    <span class="countdown-timer">03:00:00</span>
+                </div>
             </div>
-            <h1>50% Off Asia Flights This Week</h1>
-            <p>Discover paradise at half the price. Book your dream destination now before prices soar. Limited seats available on select routes to Bangkok, Singapore, Tokyo, and Bali.</p>
-            <div class="cta-wrapper">
-                <a href="#pricing" class="cta-btn primary">Book Now →</a>
-                <a href="#features" class="cta-btn secondary">Learn More</a>
+            
+            <h1 class="hero-headline">50% Off Asia Flights This Week</h1>
+            <p class="hero-subtitle">Book your dream destination to Bangkok, Singapore, Tokyo, and Bali. Limited seats at unbeatable prices.</p>
+            
+            <div class="cta-buttons">
+                <a href="#booking" class="cta-primary">
+                    <i class="fas fa-plane-departure"></i>
+                    Book Now
+                </a>
+                <a href="#destinations" class="cta-secondary">
+                    <i class="fas fa-map-marked-alt"></i>
+                    View Destinations
+                </a>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="scroll-arrow">↓</div>
-        </div>
-    </section>
-
-    <!--  FEATURES  -->
-    <section class="features" id="features">
-        <div class="features-container">
-            <div class="section-header">
-                <span class="section-badge">Our Promise</span>
-                <h2 class="features-title">Why Fly with FlyEasy?</h2>
-                <p class="section-subtitle">Experience travel the way it should be - comfortable, convenient, and affordable</p>
-            </div>
-
-            <div class="features-grid">
-                <article class="feature-card" style="--delay: 0.1s">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">✈️</div>
-                    </div>
-                    <h3>Non-Stop Routes</h3>
-                    <p>Direct flights to major destinations across Asia with no layovers. Get there faster and spend more time enjoying your destination.</p>
-                    <div class="feature-accent"></div>
-                </article>
-
-                <article class="feature-card" style="--delay: 0.2s">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">🍽️</div>
-                    </div>
-                    <h3>Free Meals & Baggage</h3>
-                    <p>Complimentary meals prepared by renowned chefs, plus generous baggage allowance. Travel with everything you need.</p>
-                    <div class="feature-accent"></div>
-                </article>
-
-                <article class="feature-card" style="--delay: 0.3s">
-                    <div class="feature-icon-wrapper">
-                        <div class="feature-icon">🔄</div>
-                    </div>
-                    <h3>Flexible Booking</h3>
-                    <p>Plans change, we understand. Easy date changes with minimal fees. Your peace of mind is our priority.</p>
-                    <div class="feature-accent"></div>
-                </article>
+            
+            <div class="trust-indicators">
+                <div class="indicator">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>DGCA Approved</span>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-certificate"></i>
+                    <span>IATA Certified</span>
+                </div>
+                <div class="indicator">
+                    <i class="fas fa-star"></i>
+                    <span>5-Star Safety</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!--  PRICING  -->
-    <section class="pricing" id="pricing">
-        <div class="pricing-container">
-            <div class="section-header">
-                <span class="section-badge">Flash Sale Pricing</span>
-                <h2 class="pricing-title">Choose Your Fare</h2>
-                <p class="section-subtitle">Unbeatable prices for a limited time. All fares include taxes and fees.</p>
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-header">
+            <h2>Why Choose FlyEasy?</h2>
+            <p class="section-subtitle">Experience premium travel at budget-friendly prices</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <h3 class="feature-title">Non-Stop Routes</h3>
+                <p class="feature-description">Direct flights to major Asian destinations with no layovers. Maximum comfort, minimum travel time.</p>
             </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="feature-title">Complimentary Services</h3>
+                <p class="feature-description">Enjoy free meals curated by chefs and generous baggage allowance on all our flights.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3 class="feature-title">Flexible Booking</h3>
+                <p class="feature-description">Easy date changes and cancellations with minimal fees. Travel with complete peace of mind.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="pricing-grid">
-                <!-- Economy Plan -->
-                <div class="price-card" style="--delay: 0.1s">
-                    <div class="price-header">
-                        <h3>Economy Fare</h3>
-                        <p class="price-subtitle">Perfect for budget travelers</p>
+    <!-- Destinations Section -->
+    <section class="destinations-section">
+        <div class="parallax-bg destinations-bg"></div>
+        
+        <div class="section-header">
+            <h2>Popular Destinations</h2>
+            <p class="section-subtitle">Explore our top-rated Asian destinations</p>
+        </div>
+        
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bangkok, Thailand">
+                    <div class="destination-overlay">
+                        <span class="price-tag">From ₹4,999</span>
                     </div>
-                    <div class="price-amount">
+                </div>
+                <div class="destination-content">
+                    <h3>Bangkok</h3>
+                    <p class="destination-country">Thailand</p>
+                    <p class="destination-desc">Vibrant city with rich culture and nightlife</p>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1534224039826-c7a0eda0e6b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Singapore">
+                    <div class="destination-overlay">
+                        <span class="price-tag">From ₹6,499</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Singapore</h3>
+                    <p class="destination-country">Singapore</p>
+                    <p class="destination-desc">Modern metropolis with iconic landmarks</p>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tokyo, Japan">
+                    <div class="destination-overlay">
+                        <span class="price-tag">From ₹12,999</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Tokyo</h3>
+                    <p class="destination-country">Japan</p>
+                    <p class="destination-desc">Blend of tradition and cutting-edge technology</p>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali, Indonesia">
+                    <div class="destination-overlay">
+                        <span class="price-tag">From ₹8,499</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Bali</h3>
+                    <p class="destination-country">Indonesia</p>
+                    <p class="destination-desc">Tropical paradise with pristine beaches</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="section-header">
+            <h2>Choose Your Fare</h2>
+            <p class="section-subtitle">Select the perfect plan for your journey</p>
+        </div>
+        
+        <div class="pricing-cards">
+            <div class="pricing-card economy">
+                <div class="card-header">
+                    <h3>Economy</h3>
+                    <p class="card-subtitle">Budget-friendly travel</p>
+                    <div class="price">
                         <span class="currency">₹</span>
                         <span class="amount">4,999</span>
                     </div>
-                    <ul class="price-features">
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Standard Seating</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>15kg Baggage Allowance</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>In-flight Snacks & Beverages</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Web Check-in Available</span>
-                        </li>
-                    </ul>
-                    <a href="#book" class="price-btn">Select Economy</a>
                 </div>
-
-                <!-- Premium Plan -->
-                <div class="price-card featured" style="--delay: 0.2s">
-                    <div class="recommend-badge">
-                        <span>⭐ Recommended</span>
-                    </div>
-                    <div class="price-header">
-                        <h3>Premium Comfort</h3>
-                        <p class="price-subtitle">Upgrade your travel experience</p>
-                    </div>
-                    <div class="price-amount">
+                
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Standard seating</li>
+                    <li><i class="fas fa-check"></i> 15kg baggage allowance</li>
+                    <li><i class="fas fa-check"></i> Complimentary snacks</li>
+                    <li><i class="fas fa-check"></i> Web check-in</li>
+                    <li><i class="fas fa-times"></i> Priority boarding</li>
+                    <li><i class="fas fa-times"></i> Lounge access</li>
+                </ul>
+                
+                <a href="#book-economy" class="select-btn">Select Economy</a>
+            </div>
+            
+            <div class="pricing-card premium featured">
+                <div class="featured-badge">RECOMMENDED</div>
+                <div class="card-header">
+                    <h3>Premium Comfort</h3>
+                    <p class="card-subtitle">Enhanced travel experience</p>
+                    <div class="price">
                         <span class="currency">₹</span>
                         <span class="amount">7,999</span>
                     </div>
-                    <ul class="price-features">
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Extra Legroom Seating</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>25kg Baggage Allowance</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Full Gourmet Meals</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Priority Boarding & Check-in</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Complimentary Lounge Access</span>
-                        </li>
-                        <li>
-                            <span class="check">✓</span>
-                            <span>Free Date Changes</span>
-                        </li>
-                    </ul>
-                    <a href="#book" class="price-btn">Select Premium</a>
                 </div>
+                
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> Extra legroom seats</li>
+                    <li><i class="fas fa-check"></i> 25kg baggage allowance</li>
+                    <li><i class="fas fa-check"></i> Gourmet meals</li>
+                    <li><i class="fas fa-check"></i> Priority check-in</li>
+                    <li><i class="fas fa-check"></i> Lounge access</li>
+                    <li><i class="fas fa-check"></i> Free date changes</li>
+                </ul>
+                
+                <a href="#book-premium" class="select-btn premium-btn">Select Premium</a>
             </div>
-
-            <div class="pricing-note">
-                <p>💳 Secure payment • 🔒 Book with confidence • ✈️ IATA certified</p>
-            </div>
+        </div>
+        
+        <div class="pricing-note">
+            <p><i class="fas fa-info-circle"></i> All prices include taxes and fees. Free cancellation within 24 hours.</p>
         </div>
     </section>
 
-    <!--  FOOTER  -->
-    <footer>
-        <div class="footer-container">
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
             <div class="footer-section">
-                <h4>Contact Us</h4>
-                <p class="footer-company">FlyEasy Airlines</p>
-                <p>Chennai International Airport</p>
-                <p>Terminal 2, Departure Gate 3</p>
-                <p class="footer-contact">📞 +91 9526569266</p>
-                <p class="footer-contact">✉️ support@flyeasy.com</p>
-            </div>
-
-            <div class="footer-section">
-                <h4>Follow Us</h4>
+                <div class="footer-logo">
+                    <i class="fas fa-plane"></i>
+                    <span>FlyEasy</span>
+                </div>
+                <p class="footer-description">Your trusted partner for affordable air travel across Asia. Experience comfort without compromise.</p>
                 <div class="social-links">
-                    <a href="#twitter" class="social-link">Twitter</a>
-                    <a href="#facebook" class="social-link">Facebook</a>
-                    <a href="#instagram" class="social-link">Instagram</a>
-                    <a href="#linkedin" class="social-link">LinkedIn</a>
-                </div>
-                <div class="newsletter">
-                    <p class="newsletter-title">Newsletter</p>
-                    <p>Get exclusive deals delivered to your inbox</p>
+                    <a href="#" aria-label="Twitter" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
-
+            
             <div class="footer-section">
-                <h4>Trusted & Certified</h4>
-                <ul class="trust-badges">
-                    <li>✔ DGCA Approved Airline</li>
-                    <li>✔ ISO 9001:2015 Certified</li>
-                    <li>✔ 5-Star Safety Rating</li>
-                    <li>✔ IATA Accredited</li>
+                <h4 class="footer-heading">Contact Information</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Terminal 3, IGI Airport, New Delhi</p>
+                    <p><i class="fas fa-phone"></i> +91 9526569266</p>
+                    <p><i class="fas fa-envelope"></i> support@flyeasy.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Customer Support</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-menu">
+                    <li><a href="#flight-status">Flight Status</a></li>
+                    <li><a href="#manage-booking">Manage Booking</a></li>
+                    <li><a href="#check-in">Online Check-in</a></li>
+                    <li><a href="#baggage-info">Baggage Information</a></li>
+                    <li><a href="#travel-advisory">Travel Advisory</a></li>
                 </ul>
             </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-heading">Certifications</h4>
+                <div class="certifications">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>DGCA Approved</span>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>IATA Member</span>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-award"></i>
+                        <span>ISO 9001:2015</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        
         <div class="footer-bottom">
-            <p>© 2026 FlyEasy Airlines. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <span>•</span>
-                <a href="#terms">Terms of Service</a>
-                <span>•</span>
-                <a href="#cookies">Cookie Policy</a>
+            <div class="payment-methods">
+                <span>Accepted Payment Methods:</span>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fas fa-rupee-sign"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+            
+            <div class="legal-info">
+                <p>&copy; 2023 FlyEasy Airlines. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                    <a href="#accessibility">Accessibility</a>
+                </div>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
