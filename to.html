@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Escape Remove Button</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(to right,#667eea,#764ba2);
+}
+
+.topbar{
+    background:white;
+    padding:15px;
+    position:sticky;
+    top:0;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+input{
+    padding:8px;
+    width:250px;
+}
+
+button{
+    padding:8px 12px;
+    background:#667eea;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+.task{
+    background:white;
+    margin:40px auto;
+    width:400px;
+    padding:20px;
+    border-radius:10px;
+    position:relative;
+    font-size:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.remove{
+    position:absolute;
+    right:10px;
+    top:10px;
+    background:red;
+    color:white;
+    padding:6px 10px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.1s;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <input id="taskInput" placeholder="Enter item">
+    <button onclick="addTask()">Add</button>
+</div>
+
+<div id="list"></div>
+
+<script>
+
+function addTask(){
+
+    let text=document.getElementById("taskInput").value;
+    if(text==="") return;
+
+    let div=document.createElement("div");
+    div.className="task";
+    div.textContent=text;
+
+    let remove=document.createElement("div");
+    remove.className="remove";
+    remove.textContent="Remove";
+
+    // ESCAPE LOGIC (Correct Version)
+    document.addEventListener("mousemove", function(e){
+
+        let rect = remove.getBoundingClientRect();
+
+        let distanceX = e.clientX - (rect.left + rect.width/2);
+        let distanceY = e.clientY - (rect.top + rect.height/2);
+
+        let distance = Math.sqrt(distanceX*distanceX + distanceY*distanceY);
+
+        // If mouse is near (80px range)
+        if(distance < 80){
+
+            let moveX = (Math.random()*200 - 100);
+            let moveY = (Math.random()*100 - 50);
+
+            remove.style.transform = 
+                `translate(${moveX}px, ${moveY}px)`;
+        }
+
+    });
+
+    // If you somehow click it
+    remove.onclick=function(){
+        div.remove();
+    }
+
+    div.appendChild(remove);
+    document.getElementById("list").appendChild(div);
+
+    document.getElementById("taskInput").value="";
+}
+
+</script>
+
+</body>
+</html>

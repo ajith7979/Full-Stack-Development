@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Glow It and Enjoy the Light!</h2>
+  
+  <div class="controls">
+    <button onclick="lightOff()">Turn OFF</button>
+
+    <img id="myImage" src="bulb_off.png" width="500" height="380">
+
+    <button onclick="lightOn()">Turn ON</button>
+  </div>
+
+</div>
+
+<script>
+  var image = document.getElementById('myImage');
+
+  function lightOn() {
+    image.src = "bulb_on.png";
+  }
+
+  function lightOff() {
+    image.src = "bulb_off.png";
+  }
+</script>
+
+</body>
+</html>
